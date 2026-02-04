@@ -1,0 +1,64 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import 'tailwindcss';
+
+/* Custom Variable */
+@theme {
+  --font-manrope: 'Manrope', 'sans-serif';
+  --font-grotesk: 'Hanken Grotesk', 'sans-serif';
+  --font-space-mono: 'Space Mono', 'monospace';
+  --breakpoint-3xl: 120rem;
+
+  --color-primary: #fafafa;
+
+  --color-button-primary: #1d1d1d;
+  --color-button-secondary: #ffffff;
+
+  --color-text-primary: #1c1c1c;
+  --color-text-secondary: #525252;
+
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+  --color-avocado-700: oklch(0.45 0.12 118.34);
+  --color-avocado-800: oklch(0.38 0.12 118.34);
+  --color-avocado-900: oklch(0.3 0.12 118.34);
+  --color-avocado-1000: oklch(0.2 0.12 118.34);
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+  /* ... */
+}
+
+.section-container {
+  @apply max-w-[90%] md:max-w-[75%] lg:max-w-[85%] mx-auto py-12;
+}
+
+/* Text */
+.text-display {
+  @apply font-grotesk text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight;
+}
+
+.text-body {
+  @apply font-manrope text-base md:text-lg leading-relaxed;
+}
+
+.text-small {
+  @apply font-manrope text-sm md:text-base leading-relaxed;
+}
+
+.text-badge {
+  @apply font-space-mono leading-none text-sm md:text-base;
+}
+
+/* Button */
+.btn-primary {
+  @apply bg-button-primary text-white font-space-mono text-base md:text-lg py-3 px-6 rounded-full hover:bg-avocado-900 transition-colors duration-300;
+}
+
+.btn-secondary {
+  @apply bg-button-secondary text-text-primary font-space-mono text-base md:text-lg py-3 px-6 rounded-full hover:bg-avocado-500 transition-colors duration-300 border border-text-primary/10;
+}
