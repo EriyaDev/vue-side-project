@@ -32,7 +32,6 @@
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
   /* ... */
 }
-
 .section-container {
   @apply max-w-[90%] md:max-w-[75%] lg:max-w-[85%] mx-auto py-12;
 }
@@ -56,9 +55,36 @@
 
 /* Button */
 .btn-primary {
-  @apply bg-button-primary text-white font-space-mono text-base md:text-lg py-3 px-6 rounded-full hover:bg-avocado-900 transition-colors duration-300;
+  @apply bg-button-primary text-white font-space-mono text-base  py-3 px-6 rounded-full hover:bg-avocado-900 transition-colors duration-300;
 }
 
 .btn-secondary {
-  @apply bg-button-secondary text-text-primary font-space-mono text-base md:text-lg py-3 px-6 rounded-full hover:bg-avocado-500 transition-colors duration-300 border border-text-primary/10;
+  @apply bg-button-secondary text-text-primary font-space-mono text-base  py-3 px-6 rounded-full hover:bg-avocado-500 transition-colors duration-300 border border-text-primary/10;
+}
+
+.bg-dashed-line {
+  background-image:
+    linear-gradient(to right, #fafafa80 1px, transparent 1px),
+    linear-gradient(to bottom, #fafafa80 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position:
+    0 0,
+    0 0;
+
+  mask-image:
+    repeating-linear-gradient(to right, black 0px, black 3px, transparent 3px, transparent 8px),
+    repeating-linear-gradient(to bottom, black 0px, black 3px, transparent 3px, transparent 8px),
+    radial-gradient(ellipse 100% 80% at 50% 100%, black 50%, transparent 90%);
+
+  -webkit-mask-image:
+    repeating-linear-gradient(to right, black 0px, black 3px, transparent 3px, transparent 8px),
+    repeating-linear-gradient(to bottom, black 0px, black 3px, transparent 3px, transparent 8px),
+    radial-gradient(ellipse 100% 80% at 50% 100%, black 50%, transparent 90%);
+
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+}
+
+.bg-gradient {
+  background: radial-gradient(125% 125% at 50% 10%, #fafafa 40%, #7ccf00 100%);
 }
