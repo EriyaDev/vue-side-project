@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div id="hero-section" class="w-full min-h-screen flex pt-40 relative">
+  <div id="hero-section" class="w-full min-h-screen flex pt-[30vh] relative">
     <div class="container mx-auto z-10">
       <div class="flex flex-col gap-2 lg:items-center">
         <div
