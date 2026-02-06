@@ -1,6 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import 'remixicon/fonts/remixicon.css';
 @import 'tailwindcss';
 
 /* Custom Variable */
@@ -22,6 +22,7 @@
   --color-avocado-200: oklch(0.98 0.04 113.22);
   --color-avocado-300: oklch(0.94 0.11 115.03);
   --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-450: oklch(0.88 0.18 117.33);
   --color-avocado-500: oklch(0.84 0.18 117.33);
   --color-avocado-600: oklch(0.53 0.12 118.34);
   --color-avocado-700: oklch(0.45 0.12 118.34);
@@ -41,6 +42,10 @@
   @apply font-grotesk text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight;
 }
 
+.medium-heading {
+  @apply font-manrope text-3xl md:text-4xl leading-snug tracking-tight;
+}
+
 .text-body {
   @apply font-manrope text-base md:text-lg leading-relaxed;
 }
@@ -55,12 +60,19 @@
 
 /* Button */
 .btn-primary {
-  @apply bg-button-primary text-white font-space-mono text-base  py-3 px-6 rounded-full hover:bg-avocado-900 transition-colors duration-300;
+  @apply bg-button-primary text-white font-space-mono text-base  py-3 px-6 rounded-full hover:bg-avocado-1000/75 transition-colors duration-300  hover:cursor-pointer;
 }
 
 .btn-secondary {
-  @apply bg-button-secondary text-text-primary font-space-mono text-base  py-3 px-6 rounded-full hover:bg-avocado-500 transition-colors duration-300 border border-text-primary/10;
+  @apply bg-button-secondary text-text-primary font-space-mono text-base  py-3 px-6 rounded-full hover:bg-avocado-450 transition-colors duration-300 border hover:cursor-pointer border-text-primary/10;
 }
+
+/* Header */
+.navbar-link {
+  @apply text-text-primary font-manrope text-base hover:text-avocado-900 transition-colors duration-300;
+}
+
+/* Home */
 
 .bg-dashed-line {
   background-image:
