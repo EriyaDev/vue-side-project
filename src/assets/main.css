@@ -35,7 +35,7 @@
   /* ... */
 }
 .section-container {
-  @apply max-w-[90%] md:max-w-[75%] lg:max-w-[85%] mx-auto py-12;
+  @apply w-full py-12;
 }
 
 /* Text */
@@ -109,4 +109,8 @@
 
 .bg-gradient {
   background: radial-gradient(125% 125% at 50% 10%, #fafafa 40%, #7ccf00 100%);
+}
+
+.bg-gradient-top {
+  background: radial-gradient(200% 125% at 50% 95%, #fafafa 40%, #7ccf00 100%);
 }
