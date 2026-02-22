@@ -72,6 +72,12 @@
   @apply bg-button-secondary text-text-primary font-space-mono text-base  py-3 px-6 rounded-full hover:bg-avocado-450 transition-colors duration-300 border hover:cursor-pointer border-text-primary/10;
 }
 
+/* Input */
+.input-box,
+.textarea-box {
+  @apply text-text-primary font-manrope focus:outline-avocado-500 bg-primary  placeholder-gray-600 border-2 border-gray-400 text-sm rounded-lg focus:ring-avocado-500 outline-avocado-500 focus:border-avocado-500 block w-full p-2.5 disabled:text-text-primary/50;
+}
+
 /* Header */
 .navbar-link {
   @apply text-text-primary font-manrope text-base hover:text-avocado-900 transition-colors duration-300;
