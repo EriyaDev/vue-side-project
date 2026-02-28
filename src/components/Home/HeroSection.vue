@@ -3,7 +3,7 @@
 <template>
   <div id="hero-section" class="w-full min-h-screen flex pt-[30vh] relative">
     <div class="container mx-auto z-10">
-      <div class="flex flex-col gap-2 lg:items-center">
+      <div class="flex flex-col gap-2 lg:items-center px-3">
         <div
           class="py-2 flex flex-row items-center gap-1 w-fit px-3 text-badge rounded-full border border-text-primary/10 shadow-sm shadow-text-secondary/5"
         >
