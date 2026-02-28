@@ -5,7 +5,7 @@ import SectionHeader from './SectionHeader.vue'
 </script>
 
 <template>
-  <div class="section-container relative">
+  <div class="section-container relative px-3">
     <SectionHeader
       title="Tailwind CSS Components"
       description="Browse a complete set of clean, reusable UI components built for modern frontend workflows with Tailwind CSS. "
