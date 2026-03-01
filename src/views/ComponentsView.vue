@@ -53,100 +53,25 @@
           </p>
         </div>
 
-        <div class="bg-white border border-gray-200 w-full lg:w-[60%] rounded-xl overflow-hidden">
-          <!-- Header -->
-          <div class="flex items-center justify-between px-5 py-3 border-b border-gray-200">
-            <div>
-              <p class="text-sm font-semibold text-gray-900">Base</p>
-              <p class="text-xs text-gray-400">markmead</p>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="flex gap-1.5">
-                <button
-                  class="px-3 py-1 text-xs font-medium rounded-md border border-gray-200 text-gray-600 hover:bg-gray-50 transition"
-                >
-                  Mobile
-                </button>
-                <button
-                  class="px-3 py-1 text-xs font-medium rounded-md border border-gray-200 text-gray-600 hover:bg-gray-50 transition"
-                >
-                  SM
-                </button>
-                <button
-                  class="px-3 py-1 text-xs font-medium rounded-md border border-gray-200 text-gray-600 hover:bg-gray-50 transition"
-                >
-                  MD
-                </button>
-                <button
-                  class="px-3 py-1 text-xs font-medium rounded-md border border-gray-200 text-gray-600 hover:bg-gray-50 transition"
-                >
-                  LG
-                </button>
-                <button
-                  class="px-3 py-1 text-xs font-medium rounded-md bg-gray-900 text-white border border-gray-900"
-                >
-                  Full
-                </button>
-              </div>
-              <div class="flex gap-1.5">
-                <button
-                  class="flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-md border border-gray-200 text-gray-600 hover:bg-gray-50 transition"
-                >
-                  <svg
-                    class="w-3.5 h-3.5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M3 5h18M3 12h18M3 19h18" />
-                  </svg>
-                  LTR
-                </button>
-                <button
-                  class="flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-md border border-gray-200 text-gray-600 hover:bg-gray-50 transition"
-                >
-                  <svg
-                    class="w-3.5 h-3.5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="12" cy="12" r="3" />
-                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z" />
-                  </svg>
-                  Preview
-                </button>
-                <button
-                  class="flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-md border border-gray-200 text-gray-600 hover:bg-gray-50 transition"
-                >
-                  <svg
-                    class="w-3.5 h-3.5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <rect x="9" y="9" width="13" height="13" rx="2" />
-                    <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
-                  </svg>
-                  Copy
-                </button>
-              </div>
-            </div>
-          </div>
+        <div class="w-full lg:max-w-[60%] border border-text-primary/10 rounded-2xl">
+          <div
+            class="w-full border-b border-b-text-primary/10 p-4 justify-between items-center flex gap-4"
+          >
+            <p class="text-body font-medium">Button Primary</p>
 
-          <!-- Body -->
-          <div class="flex items-center justify-center py-16 px-6">
-            <div class="flex flex-col gap-1.5 w-72">
-              <label for="email" class="text-sm font-medium text-gray-700">Email</label>
-              <input
-                type="email"
-                id="email"
-                class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition"
-                placeholder=""
-              />
+            <div class="flex gap-2">
+              <button
+                class="flex items-center gap-2 border border-text-primary/10 rounded-lg py-0.5 px-2"
+              >
+                <i class="ri-code-s-slash-line"></i>
+                <p class="text-small text-text-primary/70">Code</p>
+              </button>
+              <button
+                class="flex items-center gap-2 border border-text-primary/10 rounded-lg py-0.5 px-2"
+              >
+                <i class="ri-file-copy-line"></i>
+                <p class="text-small text-text-primary/70">Copy</p>
+              </button>
             </div>
           </div>
         </div>
