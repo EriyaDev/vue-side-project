@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import ComponentObject from '@/components/ComponentObject.vue'
+</script>
 
 <template>
   <div class="min-h-screen grid grid-cols-1 lg:grid-cols-[250px_1fr]">
@@ -53,28 +55,15 @@
           </p>
         </div>
 
-        <div class="w-full lg:max-w-[60%] border border-text-primary/10 rounded-2xl">
-          <div
-            class="w-full border-b border-b-text-primary/10 p-4 justify-between items-center flex gap-4"
-          >
-            <p class="text-body font-medium">Button Primary</p>
-
-            <div class="flex gap-2">
-              <button
-                class="flex items-center gap-2 border border-text-primary/10 rounded-lg py-0.5 px-2"
-              >
-                <i class="ri-code-s-slash-line"></i>
-                <p class="text-small text-text-primary/70">Code</p>
-              </button>
-              <button
-                class="flex items-center gap-2 border border-text-primary/10 rounded-lg py-0.5 px-2"
-              >
-                <i class="ri-file-copy-line"></i>
-                <p class="text-small text-text-primary/70">Copy</p>
-              </button>
-            </div>
-          </div>
-        </div>
+        <component-object
+          :name="'Button'"
+          :code="`
+          <button 
+            class='bg-button-primary text-white font-space-mono text-base  py-3 px-6 rounded-full hover:bg-avocado-1000/75 transition-colors duration-300 hover:cursor-pointer uppercase'>
+            Button
+          </button>
+          `"
+        ></component-object>
       </div>
     </main>
   </div>
