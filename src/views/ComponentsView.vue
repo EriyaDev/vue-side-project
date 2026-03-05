@@ -10,31 +10,43 @@ import ComponentObject from '@/components/ComponentObject.vue'
         <!-- Navigation items -->
         <h2 class="text-body font-semibold">COMPONENTS</h2>
         <div class="flex flex-col gap-1.5 mt-4">
-          <router-link class="text-small hover:opacity-70 transition-all" to="/components#button"
+          <router-link
+            class="text-small hover:opacity-70 transition-all hover:pl-1"
+            to="/components#button"
             >Buttons</router-link
           >
-          <router-link class="text-small hover:opacity-70 transition-all" to="/components#card"
+          <router-link
+            class="text-small hover:opacity-70 transition-all hover:pl-1"
+            to="/components#card"
             >Cards</router-link
           >
-          <router-link class="text-small hover:opacity-70 transition-all" to="/components#input"
+          <router-link
+            class="text-small hover:opacity-70 transition-all hover:pl-1"
+            to="/components#input"
             >Inputs</router-link
           >
-          <router-link class="text-small hover:opacity-70 transition-all" to="/components#textarea"
+          <router-link
+            class="text-small hover:opacity-70 transition-all hover:pl-1"
+            to="/components#textarea"
             >Text Areas</router-link
           >
           <router-link
-            class="text-small hover:opacity-70 transition-all"
+            class="text-small hover:opacity-70 transition-all hover:pl-1"
             to="/components#pagination"
             >Pagination</router-link
           >
-          <router-link class="text-small hover:opacity-70 transition-all" to="/components#badge"
+          <router-link
+            class="text-small hover:opacity-70 transition-all hover:pl-1"
+            to="/components#badge"
             >Badges</router-link
           >
-          <router-link class="text-small hover:opacity-70 transition-all" to="/components#select"
+          <router-link
+            class="text-small hover:opacity-70 transition-all hover:pl-1"
+            to="/components#select"
             >Select Options</router-link
           >
           <router-link
-            class="text-small hover:opacity-70 transition-all"
+            class="text-small hover:opacity-70 transition-all hover:pl-1"
             to="/components#breadcrumbs"
             >Breadcrumbs</router-link
           >
