@@ -26,9 +26,7 @@ function copyCode() {
   })
 }
 
-const highlightCode = computed(() =>
-  hljs.highlight(props.code, { language: 'xml' }).value
-)
+const highlightCode = computed(() => hljs.highlight(props.code, { language: 'xml' }).value)
 </script>
 
 <template>
@@ -62,6 +60,7 @@ const highlightCode = computed(() =>
       <div v-show="activeTab === 'component'" v-html="props.code"></div>
 
       <!-- CODE TAB -->
+      <!-- Tes PR -->
       <pre
         v-show="activeTab === 'code'"
         class="w-full text-small overflow-x-auto whitespace-pre-wrap hljs"
