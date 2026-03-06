@@ -57,7 +57,7 @@ const highlightCode = computed(() => hljs.highlight(props.code, { language: 'xml
     </div>
     <div class="min-h-20 p-4 flex justify-center items-center">
       <!-- COMPONENT TAB -->
-      <div v-show="activeTab === 'component'" v-html="props.code"></div>
+      <div class="flex gap-3" v-show="activeTab === 'component'" v-html="props.code"></div>
 
       <!-- CODE TAB -->
       <!-- Tes PR -->
