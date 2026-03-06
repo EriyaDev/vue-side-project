@@ -57,7 +57,7 @@ import ComponentObject from '@/components/ComponentObject.vue'
     <!-- Main content area -->
     <main class="p-6 overflow-auto mt-20">
       <!-- Dashboard content -->
-      <div class="flex flex-col gap-6">
+      <div id="button" class="flex flex-col gap-6">
         <div class="flex flex-col gap-2">
           <h1 class="medium-heading font-medium">Buttons</h1>
           <p class="text-body opacity-55 lg:max-w-[60%]">
@@ -68,18 +68,13 @@ import ComponentObject from '@/components/ComponentObject.vue'
         </div>
 
         <component-object
-          :name="'Button Primary'"
+          :name="'Button'"
           :code="`
           <button 
             class='bg-black text-white font-space-mono text-base  py-3 px-6 rounded-full hover:bg-black/75 transition-colors duration-300 hover:cursor-pointer uppercase'>
             Button
           </button>
-          `"
-        ></component-object>
 
-        <component-object
-          :name="'Button Secondary'"
-          :code="`
           <button 
             class='bg-white text-black font-space-mono text-base  py-3 px-6 rounded-full border border-black/20 hover:bg-black/5 transition-all hover:cursor-pointer uppercase'>
             Button
@@ -88,7 +83,7 @@ import ComponentObject from '@/components/ComponentObject.vue'
         ></component-object>
 
         <component-object
-          :name="'Button Change Color on Hover'"
+          :name="'Button Invert Color on Hover'"
           :code="`
           <button 
             class='bg-black text-white font-space-mono text-base border py-3 px-6 rounded-full hover:bg-white hover:text-black  transition-all hover: duration-300 hover:cursor-pointer uppercase'>
@@ -108,6 +103,12 @@ import ComponentObject from '@/components/ComponentObject.vue'
           <button 
             class='bg-black text-white font-space-mono text-base  py-3 px-6 rounded-full hover:bg-black/75 transition-colors duration-300 hover:cursor-pointer uppercase'>
             <i class='ri-add-circle-fill text-white'></i>
+            Button
+          </button>
+
+          <button 
+            class='bg-white text-black font-space-mono text-base  py-3 px-6 rounded-full border border-black/20 hover:bg-black/5 transition-all hover:cursor-pointer uppercase'>
+            <i class='ri-add-circle-fill text-black'></i>
             Button
           </button>
           `"
