@@ -200,28 +200,109 @@ import ComponentSection from '@/components/ComponentSection.vue'
       </component-section>
 
       <component-section
-        id="Inputs"
-        name="Inputs"
-        description="Form input components supporting validation, focus states, and accessibility standards. Easily reusable and customizable using TailwindCSS for consistent, responsive form interfaces."
+        id="Text-Areas"
+        name="Text Areas"
+        description="Accessible textarea components for longer user input. Responsive, reusable, and fully customizable with TailwindCSS utilities to match any production-ready form design."
       >
         <component-object
-          :name="'Product Card'"
+          :name="'Default Text Area'"
           :code="`
-          <div class='w-full max-w-sm bg-white rounded-xl border border-black/10 overflow-hidden group'>
-          <div class='relative w-full h-48 overflow-hidden'>
-            <img class='w-full h-full object-cover group-hover:scale-110 transition-all' src='https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='Image'>
+          <div class='flex flex-col gap-2 w-full max-w-sm'>
+            <label for='message' class='font-grotesk font-semibold text-gray-800 text-sm'>Your Message</label>
+            <textarea id='message' rows='4' class='w-full px-4 py-3 rounded-lg border border-black/10 focus:outline-none focus:border-avocado-500 focus:ring-1 focus:ring-avocado-500 transition-all font-manrope placeholder-black/30' placeholder='Write your message here...'></textarea>
           </div>
-            <div class='p-6'>
-              <h3 class='text-xl font-grotesk font-semibold text-gray-800 mb-2'>Product Name</h3>
-              <p class='text-black/55 font-manrope mb-4'>Product description goes here. It can be a few sentences describing the product.</p>
-              <div class='flex items-center justify-between'>
-                <span class='font-grotesk text-2xl font-bold text-gray-900'>$99.99</span>
-                <button class='px-4 py-2 font-grotesk bg-avocado-500 text-black rounded-lg hover:brightness-95 transition-all'>
-                  Add to Cart
-                </button>
+          `"
+        ></component-object>
+      </component-section>
+
+      <component-section
+        id="Pagination"
+        name="Pagination"
+        description="Responsive pagination components for navigating large datasets. Accessible, reusable, and easily styled with TailwindCSS to integrate seamlessly into any application layout."
+      >
+        <component-object
+          :name="'Simple Pagination'"
+          :code="`
+          <div class='flex items-center gap-2'>
+            <button class='w-10 h-10 flex items-center justify-center rounded-lg border border-black/10 text-gray-600 hover:bg-avocado-500 hover:text-black hover:border-avocado-500 transition-all'>
+              <i class='ri-arrow-left-s-line'></i>
+            </button>
+            <button class='w-10 h-10 flex items-center justify-center rounded-lg bg-avocado-500 text-black font-semibold transition-all shadow-sm'>
+              1
+            </button>
+            <button class='w-10 h-10 flex items-center justify-center rounded-lg border border-black/10 text-gray-600 hover:bg-avocado-500 hover:text-black hover:border-avocado-500 transition-all'>
+              2
+            </button>
+            <button class='w-10 h-10 flex items-center justify-center rounded-lg border border-black/10 text-gray-600 hover:bg-avocado-500 hover:text-black hover:border-avocado-500 transition-all'>
+              3
+            </button>
+            <button class='w-10 h-10 flex items-center justify-center rounded-lg border border-black/10 text-gray-600 hover:bg-avocado-500 hover:text-black hover:border-avocado-500 transition-all'>
+              <i class='ri-arrow-right-s-line'></i>
+            </button>
+          </div>
+          `"
+        ></component-object>
+      </component-section>
+
+      <component-section
+        id="Badges"
+        name="Badges"
+        description="Small, reusable badge components for labels, statuses, and counts. Accessible, responsive, and customizable using TailwindCSS for consistent visual communication."
+      >
+        <component-object
+          :name="'Status Badges'"
+          :code="`
+          <div class='flex flex-wrap gap-3'>
+            <span class='px-3 py-1 bg-avocado-500 text-black font-space-mono text-xs rounded-full uppercase tracking-wider font-semibold'>Active</span>
+            <span class='px-3 py-1 bg-gray-100 text-gray-600 font-space-mono text-xs rounded-full border border-gray-200 uppercase tracking-wider font-semibold'>Inactive</span>
+            <span class='px-3 py-1 bg-avocado-500/20 text-avocado-700 font-space-mono text-xs rounded-full border border-avocado-500/30 uppercase tracking-wider font-semibold'>New</span>
+            <span class='px-3 py-1 bg-black text-white font-space-mono text-xs rounded-full uppercase tracking-wider font-semibold'>Premium</span>
+          </div>
+          `"
+        ></component-object>
+      </component-section>
+
+      <component-section
+        id="Select-Options"
+        name="Select Options"
+        description="Accessible select components with consistent styling and interaction states. Reusable and responsive, with full TailwindCSS customization for modern form experiences."
+      >
+        <component-object
+          :name="'Stylized Select'"
+          :code="`
+          <div class='flex flex-col gap-2 w-full max-w-sm'>
+            <label for='options' class='font-grotesk font-semibold text-gray-800 text-sm'>Select an option</label>
+            <div class='relative'>
+              <select id='options' class='w-full px-4 py-3 rounded-lg border border-black/10 focus:outline-none focus:border-avocado-500 focus:ring-1 focus:ring-avocado-500 appearance-none bg-white font-manrope text-gray-800 transition-all hover:cursor-pointer hover:border-black/30'>
+                <option value='' disabled selected>Choose a plan...</option>
+                <option value='basic'>Basic Plan</option>
+                <option value='pro'>Pro Plan</option>
+                <option value='enterprise'>Enterprise Plan</option>
+              </select>
+              <div class='absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 flex items-center justify-center'>
+                <i class='ri-arrow-down-s-line text-lg'></i>
               </div>
             </div>
           </div>
+          `"
+        ></component-object>
+      </component-section>
+
+      <component-section
+        id="Breadcrumbs"
+        name="Breadcrumbs"
+        description="Accessible breadcrumb components for showing navigation hierarchy. Responsive, reusable, and easily customizable with TailwindCSS for clear and structured user navigation."
+      >
+        <component-object
+          :name="'Basic Breadcrumbs'"
+          :code="`
+          <nav class='flex items-center text-sm font-manrope text-gray-500 gap-2'>
+            <a href='#' class='hover:text-avocado-600 hover:underline underline-offset-4 transition-all'>Home</a>
+            <i class='ri-arrow-right-s-line text-black/30'></i>
+            <a href='#' class='hover:text-avocado-600 hover:underline underline-offset-4 transition-all'>Products</a>
+            <i class='ri-arrow-right-s-line text-black/30'></i>
+            <span class='text-gray-900 font-semibold'>Current Page</span>
+          </nav>
           `"
         ></component-object>
       </component-section>

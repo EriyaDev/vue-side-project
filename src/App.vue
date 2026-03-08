@@ -1,5 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+// import { useDarkMode } from '@/composables/useDarkMode'
+
+// const { isDark, toggleDark } = useDarkMode()
 </script>
 
 <template>
@@ -82,6 +85,19 @@ import { RouterLink, RouterView } from 'vue-router'
             ><i class="ri-github-fill text-xl"></i
           ></a>
         </li>
+        <!-- <li>
+          <button
+            id="dark-mode-toggle"
+            @click="toggleDark"
+            :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+            class="theme-toggle-btn"
+          >
+            <span class="theme-toggle-icon" :class="{ 'is-dark': isDark }">
+              <i class="ri-sun-line sun-icon"></i>
+              <i class="ri-moon-line moon-icon"></i>
+            </span>
+          </button>
+        </li> -->
       </ul>
     </nav>
   </div>
