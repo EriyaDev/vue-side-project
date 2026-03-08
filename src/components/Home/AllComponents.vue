@@ -12,13 +12,13 @@ import SectionHeader from './SectionHeader.vue'
     ></SectionHeader>
 
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-      <router-link to="/">
+      <router-link to="/components#Buttons">
         <ComponentCard
           title="Buttons"
           content="<button class='btn-primary uppercase'>Button</button>"
         />
       </router-link>
-      <router-link to="/">
+      <router-link to="/components#Cards">
         <ComponentCard
           title="Cards"
           content="<div class='p-3 rounded-lg border border-gray-200 flex flex-col gap-2 font-manrope'><h3 class='text-lg font-semibold'>Card Title</h3><p class='text-small opacity-75'>This is a sample card content.</p></div>"
