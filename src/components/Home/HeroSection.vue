@@ -17,8 +17,10 @@
           fully reusable, and designed to scale with your product.
         </p>
         <div class="flex flex-row items-center gap-4 mt-6">
-          <button class="btn-primary uppercase">Browse Components</button>
-          <button class="btn-secondary uppercase">View Docs</button>
+          <router-link to="/components" class="btn-primary uppercase"
+            >Browse Components</router-link
+          >
+          <router-link to="/docs" class="btn-secondary uppercase">View Docs</router-link>
         </div>
       </div>
     </div>

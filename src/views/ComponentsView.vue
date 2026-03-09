@@ -28,7 +28,7 @@ import ComponentSection from '@/components/ComponentSection.vue'
           >
           <router-link
             class="text-small hover:opacity-70 transition-all hover:pl-1"
-            to="/components#TextAreas"
+            to="/components#Text-Areas"
             >Text Areas</router-link
           >
           <router-link
@@ -38,17 +38,17 @@ import ComponentSection from '@/components/ComponentSection.vue'
           >
           <router-link
             class="text-small hover:opacity-70 transition-all hover:pl-1"
-            to="/components#badge"
+            to="/components#Badges"
             >Badges</router-link
           >
           <router-link
             class="text-small hover:opacity-70 transition-all hover:pl-1"
-            to="/components#select"
+            to="/components#Select-Options"
             >Select Options</router-link
           >
           <router-link
             class="text-small hover:opacity-70 transition-all hover:pl-1"
-            to="/components#breadcrumbs"
+            to="/components#Breadcrumbs"
             >Breadcrumbs</router-link
           >
         </div>
@@ -195,6 +195,47 @@ import ComponentSection from '@/components/ComponentSection.vue'
     </div>
   </div>
 </div>
+          `"
+        ></component-object>
+      </component-section>
+
+      <component-section
+        id="Inputs"
+        name="Inputs"
+        description="Form input components supporting validation, focus states, and accessibility standards. Easily reusable and customizable using TailwindCSS for consistent, responsive form interfaces."
+      >
+        <component-object
+          :name="'Default Input'"
+          :code="`
+          <div class='flex flex-col gap-2 w-full max-w-sm'>
+            <label for='basic-input' class='font-grotesk font-semibold text-gray-800 text-sm'>Username</label>
+            <input type='text' id='basic-input' class='w-full px-4 py-3 rounded-lg border border-black/10 focus:outline-none focus:border-avocado-500 focus:ring-1 focus:ring-avocado-500 transition-all font-manrope placeholder-black/30' placeholder='Enter username'>
+          </div>
+          `"
+        ></component-object>
+
+        <component-object
+          :name="'Inputs with Icon'"
+          :code="`
+          <div class='flex flex-col gap-2 w-full max-w-sm'>
+            <label for='left-icon-input' class='font-grotesk font-semibold text-gray-800 text-sm'>Email Address</label>
+            <div class='relative'>
+              <div class='absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 flex items-center justify-center'>
+                <i class='ri-mail-line text-lg'></i>
+              </div>
+              <input type='email' id='left-icon-input' class='w-full pl-11 pr-4 py-3 rounded-lg border border-black/10 focus:outline-none focus:border-avocado-500 focus:ring-1 focus:ring-avocado-500 transition-all font-manrope placeholder-black/30' placeholder='you@example.com'>
+            </div>
+          </div>
+
+          <div class='flex flex-col gap-2 w-full max-w-sm'>
+            <label for='right-icon-input' class='font-grotesk font-semibold text-gray-800 text-sm'>Search</label>
+            <div class='relative'>
+              <input type='text' id='right-icon-input' class='w-full pl-4 pr-11 py-3 rounded-lg border border-black/10 focus:outline-none focus:border-avocado-500 focus:ring-1 focus:ring-avocado-500 transition-all font-manrope placeholder-black/30' placeholder='Search items...'>
+              <div class='absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 flex items-center justify-center hover:text-black transition-colors cursor-pointer'>
+                <i class='ri-search-line text-lg'></i>
+              </div>
+            </div>
+          </div>
           `"
         ></component-object>
       </component-section>

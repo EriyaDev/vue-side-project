@@ -24,19 +24,19 @@ import SectionHeader from './SectionHeader.vue'
           content="<div class='p-3 rounded-lg border border-gray-200 flex flex-col gap-2 font-manrope'><h3 class='text-lg font-semibold'>Card Title</h3><p class='text-small opacity-75'>This is a sample card content.</p></div>"
         />
       </router-link>
-      <router-link to="/">
+      <router-link to="/components#Inputs">
         <ComponentCard
           title="Inputs"
           content="<input type='text' class='input-box' placeholder='Input Field' />"
         />
       </router-link>
-      <router-link to="/">
+      <router-link to="/components#Text-Areas">
         <ComponentCard
           title="Text Areas"
           content="<textarea class='textarea-box' rows='4' placeholder='Text Area Field'></textarea>"
         />
       </router-link>
-      <router-link to="/">
+      <router-link to="/components#Pagination">
         <ComponentCard
           title="Paginations"
           content="<nav class='flex items-center gap-1'>
@@ -77,7 +77,7 @@ import SectionHeader from './SectionHeader.vue'
 </nav>"
         />
       </router-link>
-      <router-link to="/">
+      <router-link to="/components#Badges">
         <ComponentCard
           title="Badges"
           content="
@@ -89,13 +89,13 @@ import SectionHeader from './SectionHeader.vue'
             "
         />
       </router-link>
-      <router-link to="/">
+      <router-link to="/components#Select-Options">
         <ComponentCard
           title="Select Options"
           content="<select class='input-box'><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>"
         />
       </router-link>
-      <router-link to="/">
+      <router-link to="/components#Breadcrumbs">
         <ComponentCard
           title="Breadcrumbs"
           content="<ol class='flex items-center gap-1 text-sm text-gray-700'>

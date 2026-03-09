@@ -64,6 +64,10 @@
   @apply font-space-mono leading-none text-sm md:text-base;
 }
 
+.link {
+  @apply text-avocado-600 underline;
+}
+
 /* Button */
 .btn-primary {
   @apply bg-button-primary text-white font-space-mono text-base  py-3 px-6 rounded-full hover:bg-avocado-1000/75 transition-colors duration-300  hover:cursor-pointer;
