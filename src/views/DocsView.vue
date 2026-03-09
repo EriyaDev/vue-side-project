@@ -2,6 +2,16 @@
 import ComponentObject from '@/components/ComponentObject.vue'
 import ComponentSection from '@/components/ComponentSection.vue'
 import OnlyCode from '@/components/OnlyCode.vue'
+
+import { ref, onMounted } from 'vue'
+
+const isVisible = ref(false)
+
+onMounted(() => {
+  requestAnimationFrame(() => {
+    isVisible.value = true
+  })
+})
 </script>
 
 <template>
@@ -29,7 +39,10 @@ import OnlyCode from '@/components/OnlyCode.vue'
     <!-- Main content area -->
     <main class="p-6 overflow-auto">
       <!-- Dashboard content -->
-      <div class="grid grid-cols-1 gap-6 mt-20">
+      <div
+        class="grid grid-cols-1 gap-6 mt-20 transition-all"
+        :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
+      >
         <div class="flex flex-col gap-6 mb-20">
           <div class="flex flex-col gap-2">
             <h1 class="medium-heading font-medium">Introduction</h1>

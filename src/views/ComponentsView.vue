@@ -1,6 +1,15 @@
 <script setup>
 import ComponentObject from '@/components/ComponentObject.vue'
 import ComponentSection from '@/components/ComponentSection.vue'
+import { ref, onMounted } from 'vue'
+
+const isVisible = ref(false)
+
+onMounted(() => {
+  requestAnimationFrame(() => {
+    isVisible.value = true
+  })
+})
 </script>
 
 <template>
@@ -56,7 +65,10 @@ import ComponentSection from '@/components/ComponentSection.vue'
     </aside>
 
     <!-- Main content area -->
-    <main class="p-6 overflow-auto mt-20">
+    <main
+      class="p-6 overflow-auto mt-20 transition-all"
+      :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
+    >
       <!-- Dashboard content -->
 
       <component-section
